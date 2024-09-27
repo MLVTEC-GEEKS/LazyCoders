@@ -1,0 +1,196 @@
+/* Make the container take the full width and height of the viewport */
+.auth-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  /* The auth-box contains both the left and right sections */
+  .auth-box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5; /* Set a light background color */
+  }
+  
+  /* Left section styling */
+  .auth-left {
+    background-color: #3ab397; /* Green background color */
+    color: white; /* White text */
+    width: 40%; /* 40% of the screen width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; /* Add some padding */
+  }
+  
+  /* Heading in the left section */
+  .auth-left h2 {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+  
+  /* Text below the heading */
+  .auth-left p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Sign-in button styling */
+  .sign-in-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    color: #2fbaa4;
+    cursor: pointer;
+  }
+  
+  .sign-in-btn:hover {
+    background-color: #f0f0f0; /* Light hover effect */
+  }
+  
+  /* Right section styling */
+  .auth-right {
+    width: 60%; /* 60% of the screen width */
+    padding: 50px; /* Add padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* White background */
+  }
+  
+  /* Heading in the right section */
+  .auth-right h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Social icons section */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .social-icons button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Form styling */
+  form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Input field styling */
+  form input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  form input:focus {
+    border-color: #2fbaa4;
+    outline: none;
+    box-shadow: 0 0 5px rgba(47, 186, 164, 0.5);
+  }
+  
+  /* Sign-up button styling */
+  .btn-success {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #2fbaa4;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-success:hover {
+    background-color: #249f8d;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .auth-box {
+      flex-direction: column;
+    }
+  
+    .auth-left,
+    .auth-right {
+      width: 100%;
+      height: 50%; /* Split the sections vertically on smaller screens */
+    }
+  
+    .auth-left {
+      padding: 15px;
+    }
+  
+    .auth-right {
+      padding: 30px;
+    }
+  
+    /* Adjust text sizes for smaller screens */
+    .auth-left h2,
+    .auth-right h2 {
+      font-size: 28px;
+    }
+  
+    .auth-left p,
+    form input,
+    .btn-success {
+      font-size: 16px;
+    }
+  
+    .sign-in-btn {
+      padding: 8px 16px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .auth-left h2,
+    .auth-right h2 {
+      font-size: 24px;
+    }
+  
+    .auth-left p,
+    form input,
+    .btn-success {
+      font-size: 14px;
+    }
+  
+    .sign-in-btn {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+  
+    .auth-left {
+      padding: 10px;
+    }
+  
+    .auth-right {
+      padding: 20px;
+    }
+  }
+  
