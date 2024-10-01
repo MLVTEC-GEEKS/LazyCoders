@@ -11,7 +11,7 @@ const SignUp = () => {
           <h1>Welcome</h1>
           <h4 className="text-center">Your path to coding mastery begins here. Register and rise!</h4>
           <p>To keep connected with us please login </p>
-          <button className="btn btn-light sign-in-btn"><NavLink to='/login'>SIGN IN</NavLink></button>
+          <button className="btn btn-light sign-in-btn"><NavLink to='/'>SIGN IN</NavLink></button>
         </div>
         <div className="auth-right">
           <h1>Create Account</h1>
